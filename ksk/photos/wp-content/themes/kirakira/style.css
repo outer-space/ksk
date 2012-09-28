@@ -1,0 +1,399 @@
+/*
+Theme Name: Boiler 
+Author: Francis Tseng
+Author URI: http://www.yadonchow.com/
+Description: My boilerplate theme
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* =============================================================================
+   HTML5 Boilerplate CSS: h5bp.com/css
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+
+/* ===== Primary Styles ========================================================
+   Author: Francis Tseng ( @yadonchow )
+   ========================================================================== */
+
+html,
+body {
+  min-height:100%;
+  height:100%;
+  background:#fff;
+  color:#222;
+  font-family: "Georgia",  "Times New Roman", Times, serif;
+}
+
+header {
+  padding:2em 0;
+  margin:0 2em;
+  text-align:center;
+  border-bottom:1px dotted #ddd;
+  font-family: "QuicksandDash", "Helvetica";
+  text-transform: uppercase;
+}
+
+article {
+  padding:0em 1em;
+  margin:0 .2em 0em .2em;
+}
+  .blog article:last-of-type {
+    border-bottom:none;
+  }
+
+#main {
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  margin:0 auto;
+  position:relative;
+}
+
+.entry, .pages {
+  max-width:900px;
+  margin:0 auto;
+  width:90%;
+  padding:1em;
+}
+  .entry p:first-of-type {
+    clear:both;
+    margin-top:1em;
+  }
+  .pages {
+    font-weight:bold;
+    text-transform:uppercase;
+    font-family:'Gibson', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }
+    .next, .prev {
+      width:50%;
+      overflow:hidden;
+      text-transform: lowercase;
+      padding-bottom: 1em;
+    }
+      .next, .next a, .next a:visited, .next a:hover {
+        float:right;
+        text-align:right; 
+        color:#bbb;
+      }
+      .prev, .prev a, .prev a:visited, .prev a:hover {
+        float:left;
+        text-align:left;
+        color: #bbb;
+      }
+
+h1, h5 {
+  font-size:2em;
+  font-family:'Gibson', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight:100;
+  margin:0;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2, h2 a, h2 a:visited {
+  font-size: 1.3em;
+  font-family: 'QuicksandDash', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  text-align: just;
+  text-transform: uppercase;
+  color:#aaa;
+}
+
+h2 a:hover; {
+  color: #2b2c2e;
+}
+
+h1 a, h1 a:visited {
+    color:#fff;
+  } h1 a:hover {
+    color:#bbb;
+    border-bottom:none !important;
+  }
+
+
+h5 {
+  font-size:0.8em;
+  color:#777;
+  text-transform:uppercase;
+}
+
+img { max-width:100%; }
+
+a, a:visited {
+  color:#FF3232;
+  text-decoration:none;
+
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+  .blog a:hover {
+    color:#FF3232;
+    border-bottom:1px dotted #FF3232;
+  }
+
+.categories {
+  font-style:italic;
+  font-size:0.8em;
+  margin-top:3.5em;
+}
+  .categories a, .categories a:visited {
+    color:#999;
+  }
+    .categories a:hover {
+      color:#FF3232;
+    }
+
+h5 {
+  overflow:hidden;
+  margin-top:0.4em;
+}
+  .date {
+    text-align:center;
+    color: #fff;
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+
+  }
+
+  .text:hover .date, .text:hover h1 a {
+    color: #bbb;
+  }
+  
+.footnotes {
+  border-top:1px solid #888;
+  margin-top:3em;
+  padding-top:1.5em;
+  font-size:0.9em;
+}
+.footnotes ol { padding-left:1.5em; }
+  .footnotes ol li { list-style-type:decimal; }
+
+/* ==== FOOTER ==== */
+footer {
+  background:#131313;
+  color:#eee;
+  padding:2em;
+  overflow:hidden;
+  clear:both;
+  margin:1em auto 0 auto;
+  position:relative;
+}
+  footer > * {
+    float:left;
+  }
+  .about {
+    margin:0.6em 0 0 2em;
+  }
+    .about h1 a {
+      color:#FF3232;
+      text-transform:uppercase;
+      font-weight:bold;
+    }
+
+/* ==== SEARCH ==== */
+#searchform {
+  margin:2em 0 0 0;
+}
+  #searchform input {
+    font-family:'Gibson', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding:0.4em;
+    font-size:0.8em;
+  }
+  #s {
+    border:1px solid #ddd;
+  }
+  #searchsubmit {
+    text-transform:uppercase;
+    background:#777;
+    color:#eee;
+    border:none;
+    font-weight:bold;
+  }
+    #searchsubmit:hover {
+      background:#FF3232;
+    }
+
+.search-results > h1 {
+  text-align:center;
+  padding:2em 0;
+}
+
+.no-dice {
+  text-align:center;
+  padding:4em;
+}
+  .no-dice h5 {
+    text-transform:none;
+  }
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+
+  article {
+    margin:0 1em 0 0;
+  }
+
+  footer { text-align:center; }
+  footer > * {
+    float:none;
+  }
+  .about {
+    margin:0.6em 0 0 0;
+  }
+
+}
+
+/* =============================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Gibson';
+    src: url('fonts/gibson/Gibson-Light-webfont.eot');
+    src: url('fonts/gibson/Gibson-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gibson/Gibson-Light-webfont.woff') format('woff'),
+         url('fonts/gibson/Gibson-Light-webfont.ttf') format('truetype'),
+         url('fonts/gibson/Gibson-Light-webfont.svg#Gibson') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gibson';
+    src: url('fonts/gibson/Gibson-Regular-webfont.eot');
+    src: url('fonts/gibson/Gibson-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gibson/Gibson-Regular-webfont.woff') format('woff'),
+         url('fonts/gibson/Gibson-Regular-webfont.ttf') format('truetype'),
+         url('fonts/gibson/Gibson-Regular-webfont.svg#Gibson') format('svg');
+   font-weight:normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gibson';
+    src: url('fonts/gibson/Gibson-SemiBold-webfont.eot');
+    src: url('fonts/gibson/Gibson-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gibson/Gibson-SemiBold-webfont.woff') format('woff'),
+         url('fonts/gibson/Gibson-SemiBold-webfont.ttf') format('truetype'),
+         url('fonts/gibson/Gibson-SemiBold-webfont.svg#Gibson') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuicksandDash';
+    src: url('fonts/quicksand/Quicksand_Dash-webfont.eot');
+    src: url('fonts/quicksand/Quicksand_Dash-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quicksand/Quicksand_Dash-webfont.woff') format('woff'),
+         url('fonts/quicksand/Quicksand_Dash-webfont.ttf') format('truetype'),
+         url('fonts/quicksand/Quicksand_Dash-webfont.svg#QuicksandDash') format('svg');
+    font-weight: normal;
+    font-style: normal; 
+  }
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
