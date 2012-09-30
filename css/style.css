@@ -90,7 +90,8 @@ body {
   height:100%;
   background:#fff;
   color:#222;
-  font-family: 'QuicksandDash', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'QuicksandBook', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
 }
 
 header {
@@ -140,12 +141,25 @@ h1, h1 a, h1 a:visited {
   text-transform: uppercase;
   color:#1ba795;
   margin: 0;
-} 
+}
 
-h1 a:hover {
-    color:#bbb;
-    border-bottom:none !important;
-  }
+.show {
+  display:none;
+}
+
+header a:hover {
+  color:#bbb;
+  border-bottom:none !important;
+}
+
+header:hover .show {
+  display: inline;
+  text-transform: lowercase;
+}
+
+header:hover .noshow {
+  display: none;
+}
 
 h3 {
   color: 000;
@@ -162,7 +176,7 @@ h5 {
 img { max-width:100%;
  }
 
-a, a:visited {
+a, a:visited {#0ae5af
   color:#FF3232;
   text-decoration:none;
 
@@ -179,19 +193,20 @@ h5 {
 
 .slideup {
   top: 100%;
+  left:0;
   position:absolute;
   background-color: #eee;
   text-align: center;
   width: 100%;
   opacity: .9;
-  padding-top: 5em;
-  padding-bottom: 20em;
+  padding-top: 1em;
+  height:100%;
   line-height: 2;
   color: #000;
   font-family: 'QuicksandDash', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }  
 
-.slideup a, a:visited {
+.slideup a, .slideup a:visited {
   color: #000;
   font-family: 'QuicksandDash', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
@@ -212,6 +227,9 @@ h5 {
   margin: 0em 2em;
 }
 
+.about a, .about a:visited {
+  color:#0ae5af;
+}
 
 .daysofgray {
   text-align: center;
@@ -239,7 +257,8 @@ h5 {
 .fairytale {
   text-align: center;
   padding-top: .5em;
-  margin: 0em 2em;
+  padding-bottom: 2em;
+  margin: 0em 5em;
 }
 
 .chinglish {
@@ -248,7 +267,7 @@ h5 {
   margin: 0em 2em;
 }
 
-.abovebelowbeyond a, a:visited {
+.abovebelowbeyond a, .abovebelowbeyond a:visited {
   color: #50aadc;
   -webkit-transition:all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -257,11 +276,11 @@ h5 {
 }
 .abovebelowbeyond a:hover{
   opacity: .8;
-  color: #5a1323;
+  color: #5a3;
 }
 
-.daysofgray a, a:visited {
-  color: #5a1323;
+.daysofgray a, .daysofgray a:visited {
+  color: #5a3;
   text-transform: bold;
   -webkit-transition:all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -270,10 +289,10 @@ h5 {
 }
 .daysofgray a:hover{
   opacity: .8;
-  color: #5a1323;
+  color: #5a3;
 }
 
-.caoker a, a:visited {
+.caoker a, .caoker a:visited {
   color: #00a;
   text-transform: bold;
   -webkit-transition:all 0.3s ease-in-out;
@@ -286,7 +305,7 @@ h5 {
   color: #00a;
 }
 
-.chinares a, a:visited {
+.chinares a, .chinares a:visited {
   color: #00a;
   text-transform: bold;
   -webkit-transition:all 0.3s ease-in-out;
@@ -299,7 +318,7 @@ h5 {
   color: #00a;
 }
 
-.chinglish a, a:visited {
+.chinglish a, .chinglish a:visited {
   color: #5a1323;
   text-transform: bold;
   -webkit-transition:all 0.3s ease-in-out;
@@ -310,6 +329,19 @@ h5 {
 .chinglish a:hover{
   opacity: .8;
   color: #5a1323;
+}
+
+.fairytale a, .fairytale a:visited {
+  color: #00a;
+  text-transform: bold;
+  -webkit-transition:all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+.fairytale a:hover{
+  opacity: .8;
+  color: #00a;
 }
 
 .above-img {
@@ -338,6 +370,13 @@ h5 {
 
 .chinglish-img {
   padding-bottom: .5em;
+  width:100%;
+  margin:1em auto;
+  opacity: .7;
+}
+
+.fairytale-img {
+  padding-bottom: 2em;
   width:100%;
   margin:1em auto;
 }
@@ -431,6 +470,20 @@ footer ul li {
     font-weight: normal;
     font-style: normal; 
   }
+
+@font-face {
+    font-family: 'QuicksandBook';
+    src: url('../fonts/quicksand/Quicksand_Book-webfont.eot');
+    src: url('../fonts/quicksand/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand/Quicksand_Book-webfont.woff') format('woff'),
+         url('../fonts/quicksand/Quicksand_Book--webfont.ttf') format('truetype'),
+         url('../fonts/quicksand/Quicksand_Book-webfont.svg#QuicksandDash') format('svg');
+    font-weight: normal;
+    font-style: normal; 
+  }
+
+
+
 
 /* =============================================================================
    Non-Semantic Helper Classes

@@ -10,7 +10,6 @@ $( function() {
 	var top, up;
 	$('footer li').live( 'click', function() {
 		
-
 		$('.slideup').children().hide();
 
 		var item = $(this).index();
