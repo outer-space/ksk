@@ -231,10 +231,7 @@ h5 {
   color:#0ae5af;
 }
 
-.daysofgray {
-  text-align: center;
-  margin: 1em 8em;
-}
+/** PROJECTS **/
 
 .abovebelowbeyond {
   text-align: center;
@@ -242,13 +239,12 @@ h5 {
   margin: 0em 2em;
 }
 
-.caoker {
+.daysofgray {
   text-align: center;
-  padding-top: .5em;
-  margin: 0em 2em;
+  margin: 1em 8em;
 }
 
-.chinares {
+.caoker {
   text-align: center;
   padding-top: .5em;
   margin: 0em 2em;
@@ -261,12 +257,25 @@ h5 {
   margin: 0em 5em;
 }
 
-.chinglish {
- text-align: center;
+.chinares {
+  text-align: center;
   padding-top: .5em;
   margin: 0em 2em;
 }
 
+.chinglish {
+  text-align: center;
+  padding-top: .5em;
+  margin: 0em 2em;
+}
+
+.eastwest {
+  text-align: center;
+  padding-top: .5em;
+  margin: 0em 2em;
+}
+
+/** PROJECT LINKS **/
 .abovebelowbeyond a, .abovebelowbeyond a:visited {
   color: #50aadc;
   -webkit-transition:all 0.3s ease-in-out;
@@ -280,7 +289,7 @@ h5 {
 }
 
 .daysofgray a, .daysofgray a:visited {
-  color: #5a3;
+  color: #5b7391;
   text-transform: bold;
   -webkit-transition:all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -289,7 +298,7 @@ h5 {
 }
 .daysofgray a:hover{
   opacity: .8;
-  color: #5a3;
+  color: #5aaaaa;
 }
 
 .caoker a, .caoker a:visited {
@@ -301,6 +310,19 @@ h5 {
   transition:all 0.3s ease-in-out;
 }
 .caoker a:hover{
+  opacity: .8;
+  color: #00a;
+}
+
+.fairytale a, .fairytale a:visited {
+  color: #00a;
+  text-transform: bold;
+  -webkit-transition:all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+.fairytale a:hover{
   opacity: .8;
   color: #00a;
 }
@@ -331,7 +353,7 @@ h5 {
   color: #5a1323;
 }
 
-.fairytale a, .fairytale a:visited {
+.eastwest a, .eastwest a:visited {
   color: #00a;
   text-transform: bold;
   -webkit-transition:all 0.3s ease-in-out;
@@ -339,11 +361,13 @@ h5 {
   -moz-transition: all 0.3s ease-in-out;
   transition:all 0.3s ease-in-out;
 }
-.fairytale a:hover{
+.eastwest a:hover{
   opacity: .8;
   color: #00a;
 }
 
+
+/** PROJECT IMAGES **/
 .above-img {
   padding-bottom: .5em;
   width:50%;
@@ -362,6 +386,12 @@ h5 {
   margin:1em auto;
 }  
 
+.fairytale-img {
+  padding-bottom: 2em;
+  width:100%;
+  margin:1em auto;
+}
+
 .chinares-img{
   padding-bottom: .5em;
   width:100%;
@@ -375,13 +405,14 @@ h5 {
   opacity: .7;
 }
 
-.fairytale-img {
+.eastwest-img:{
   padding-bottom: 2em;
-  width:100%;
+  width:60%;
   margin:1em auto;
 }
 
 
+/* ==== END PROJECTS ==== */
 
 .social-images {
   padding-bottom: 1em;
